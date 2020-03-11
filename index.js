@@ -13,6 +13,7 @@ var friendList = ["Alice", "Clark", "Bell", "Octavia"];
 
 app.use(express.static("css"));
 app.use(bodyParser.urlencoded({extended: true}));
+
 app.post("/addfriend", function(req, res){
   var newfriend = req.body.newfriend;
   friendList.push(newfriend);
