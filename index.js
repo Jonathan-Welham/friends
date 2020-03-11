@@ -28,7 +28,7 @@ app.get("/friends", function(req, res){
   res.render("friends", {friends: friendList})
 })
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
   console.log("Server is up and running");
 });
 
